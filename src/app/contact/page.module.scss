@@ -15,3 +15,13 @@
 		height: var(--fs-h2);
 	}
 }
+
+.button-wrapper {
+	display: grid;
+	width: 100%;
+	gap: 2rem;
+
+	button {
+		width: 100%
+	}
+}

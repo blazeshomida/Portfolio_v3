@@ -115,9 +115,9 @@ const Projects = () => {
 			<DashboardRow order={"top"} page={page.slice(1)}>
 				<Widget layoutId="widget1">
 					<motion.div className={styles["widget-wrapper"]}>
-						<motion.h2 className={styles["main-heading"]}>
+						<motion.h1 className={styles["main-heading"]}>
 							Some of my past works include...
-						</motion.h2>
+						</motion.h1>
 					</motion.div>
 				</Widget>
 				<Widget layoutId="widget2">

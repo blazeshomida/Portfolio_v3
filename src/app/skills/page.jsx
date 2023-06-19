@@ -91,14 +91,14 @@ const Skills = () => {
 				</Widget>
 				<Widget layoutId="widget2">
 					<motion.div className={styles["widget-wrapper"]}>
-						<motion.h2
+						<motion.h1
 							initial={{ opacity: 0, x: "30%", scale: 1 }}
 							animate={{ opacity: 1, x: "0%", scale: 1 }}
 							transition={{ duration: 0.5, delay: 0.2 }}
 							className={styles["main-heading"]}
 						>
 							“A Frontend Developer with skills in...
-						</motion.h2>
+						</motion.h1>
 					</motion.div>
 				</Widget>
 			</DashboardRow>

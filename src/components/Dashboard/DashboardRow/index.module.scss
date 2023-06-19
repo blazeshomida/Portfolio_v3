@@ -15,6 +15,13 @@
 		}
 	}
 }
+
+.thankyou {
+	display: grid;
+	align-items: center;
+	height: 30rem;
+}
+
 @media (min-width: 1024px) {
 	.skills {
 		&.top {

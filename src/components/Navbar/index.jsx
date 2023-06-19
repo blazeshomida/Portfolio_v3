@@ -4,6 +4,7 @@ import { useContext } from "react";
 import styles from "./index.module.scss";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
 	AboutIcon,
@@ -15,6 +16,7 @@ import {
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SunOuter, SunInner } from "../../../public/assets/svgs";
 import { ThemeContext } from "@/context/theme-provider";
+import logo from '/public/assets/logo.png'
 
 const Navbar = () => {
 	const pathname = usePathname();
@@ -51,6 +53,14 @@ const Navbar = () => {
 
 	return (
 		<nav className={styles["navbar"]}>
+			<Image 
+			src={logo}
+			width={40}
+			height={40}
+			alt="Blaze's Logo"
+			/>
+
+
 			<ul className={`${styles["nav-list"]}`} role="list">
 				{navLinks.map((link) => (
 					<li

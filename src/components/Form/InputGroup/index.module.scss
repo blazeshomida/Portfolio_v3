@@ -1,5 +1,6 @@
 .input-group {
 	display: grid;
+	position: relative;
 }
 
 .input-label,
@@ -20,4 +21,32 @@
 	font-family: inherit;
 	font-weight: 400;
     border-radius: .5rem;
+}
+
+.error-message {
+	position: absolute;
+	color: hsl(var(--clr-primary));
+	right: 0;
+}
+
+.error {
+	border: 3px solid hsl(var(--clr-primary));
+	animation: shake .3s ease-in-out;
+
+	&::placeholder {
+	color: hsl(var(--clr-primary), .5);
+
+	}
+}
+
+@keyframes shake {
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-1rem);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(1rem);
+	}
+	100% {
+		transform: translateX(0%);
+	}
 }

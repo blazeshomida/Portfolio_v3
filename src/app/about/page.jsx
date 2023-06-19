@@ -31,9 +31,9 @@ const About = () => {
 				</Widget>
 				<Widget layoutId="widget2">
 					<motion.div className={styles["widget-wrapper"]}>
-						<motion.h2 className={styles["main-heading"]}>
+						<motion.h1 className={styles["main-heading"]}>
 							“A bit about me...
-						</motion.h2>
+						</motion.h1>
 					</motion.div>
 				</Widget>
 			</DashboardRow>
