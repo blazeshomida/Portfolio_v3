@@ -50,7 +50,7 @@ const Navbar = () => {
 	];
 
 	return (
-		<nav className={styles['navbar']}>
+		<nav className={styles["navbar"]}>
 			<ul className={`${styles["nav-list"]}`} role="list">
 				{navLinks.map((link) => (
 					<li
@@ -71,8 +71,11 @@ const Navbar = () => {
 				<li></li>
 			</ul>
 			<button
+				aria-label={`Toggle to ${darkMode ? "light" : "dark"} mode.`}
 				onClick={toggleTheme}
-				className={`${styles["theme-icon"]} ${darkMode ? styles["dark"] : styles["light"]} `}
+				className={`${styles["theme-icon"]} ${
+					darkMode ? styles["dark"] : styles["light"]
+				} `}
 			>
 				<SunInner className={styles["sun-inner"]} />
 				<SunOuter className={styles["sun-outer"]} />

@@ -95,11 +95,13 @@
 	z-index: 9999;
 	place-self: right;
 	border-radius: 50%;
+	transition: all .2s ease-in-out;
 
-	&:hover,
-	&:focus {
-		opacity: 1;
-		background-color: hsl(0, 0, 50);
+	@media (hover: hover) {
+		&:hover {
+			opacity: 1;
+			background-color: hsl(0, 0, 50);
+		}
 	}
 
 	@media (width < 1024px) {

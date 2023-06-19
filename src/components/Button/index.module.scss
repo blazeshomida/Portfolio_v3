@@ -5,9 +5,19 @@
     font-weight: 600;
     border-radius: .5rem;
     padding-block: 1rem;
+    transition: all .25s ease-in-out;
+
+
+    &:hover {
+        background-color: hsl(var(--clr-primary), .75);
+    }
 }
 
 .tinted {
     color: hsl(var(--clr-primary));
     background-color: hsl(var(--clr-primary), 0.15);
+
+    &:hover {
+        background-color: hsl(var(--clr-primary), 0.25);
+    }
 }

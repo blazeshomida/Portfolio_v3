@@ -167,13 +167,14 @@ const Projects = () => {
 										priority
 										alt={project.title}
 										className={styles["project-image"]}
-										src={project.image}
+										src={isDesktop ? project.image : project.imageMobile}
 										width={1200}
 										height={800}
 									/>
 								</motion.div>
 
 								<button
+
 									onClick={(event) => handleCardFlip(event)}
 									className={styles["more-info-button"]}
 								>

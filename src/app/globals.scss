@@ -9,6 +9,7 @@
 	@each $key, $value in $typography {
 		--#{$key}: #{$value};
 	}
+	-webkit-tap-highlight-color: transparent
 }
 
 @media (prefers-color-scheme: light) {
@@ -103,15 +104,11 @@ button {
 	text-decoration: none;
 	cursor: pointer;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	border-radius: 100vw;
 
-	&:focus {
-		outline: 4px solid inherit;
-		outline-offset: 6px;
-	}
-
-	&:active, &:focus {
-		background: transparent;
-		box-shadow: none;
+	&:focus-visible {	
+		outline: 3px solid hsl(var(--clr-primary));
+		outline-offset: 8px;
 	}
 }
 
