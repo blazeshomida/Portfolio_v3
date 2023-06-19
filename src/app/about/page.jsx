@@ -20,7 +20,7 @@ const About = () => {
 			<DashboardRow order={"top"} page={page.slice(1)}>
 				<Widget layoutId="widget1" aspect={!isDesktop ? 'two' : 'square'}>
 					<div className={styles["widget-wrapper"]}>
-						<Image src={aboutMemoji} fill={true} />
+						<Image src={aboutMemoji} fill={true} alt="Blaze's memoji character"/>
 					</div>
 				</Widget>
 				<Widget layoutId="widget2">
@@ -35,7 +35,7 @@ const About = () => {
 				<Widget layoutId="widget3">
 					<motion.div className={styles["widget-wrapper"]}>
 						<motion.p className={styles["details"]}>
-							"Beyond the code, there's a bit more to my story. I started my
+						&quot;Beyond the code, there&apos;s a bit more to my story. I started my
 							professional journey with a successful career in sales, honing my
 							communication and problem-solving skills. This experience has
 							proved invaluable in my transition to web development, a shift
@@ -50,7 +50,7 @@ const About = () => {
 							smart home tech. In particular, designing a customized home
 							dashboard with Home Assistant, adding my personal touch to
 							pre-built components, really fueled my drive to delve into
-							coding."
+							coding.
 						</motion.p>
 						<motion.p className={styles["details"]}>
 							As I continue my journey in web development, I am amazed by its
@@ -58,7 +58,7 @@ const About = () => {
 							contributing to creative and innovative projects. My ultimate goal
 							is to use my unique combination of skills, both from sales and
 							from my personal interests, to make a real, positive difference in
-							the world of web development."
+							the world of web development.&quot;
 						</motion.p>
 					</motion.div>
 				</Widget>

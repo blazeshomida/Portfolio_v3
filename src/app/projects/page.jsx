@@ -34,7 +34,7 @@ const Projects = () => {
 
 		// This will clear the timer when the component unmounts, or when any of the dependencies change.
 		return () => clearTimeout(timer);
-	}, [activeProject, isOpen, isHovered, isDragging]); // activeProject, isOpen, and isHovered are dependencies
+	}, [activeProject, isOpen, isHovered, isDragging, projects.length]); // activeProject, isOpen, and isHovered are dependencies
 
 	function handleCardFlip(event) {
 		if (isDragging) {
@@ -181,6 +181,7 @@ const Projects = () => {
 								<div className={styles["pagination-wrapper"]}>
 									{projects.map((project, index) => (
 										<button
+											key={index}
 											onClick={() => handlePagination(index)}
 											className={`${
 												activeProject === index && styles["active"]
@@ -211,7 +212,7 @@ const Projects = () => {
 									<div className={styles["logo-wrapper"]}>
 										{project.tech.map((tech) =>
 											techLogos.map(
-												(logo) => logo.name === tech && <logo.component />
+												(logo, index) => logo.name === tech && <logo.component key={index}/>
 											)
 										)}
 									</div>

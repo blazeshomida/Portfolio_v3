@@ -34,7 +34,7 @@ const Contact = () => {
 				</Widget>
 				<Widget layoutId="widget2" aspect={!isDesktop && 'two'} >
 					<div className={styles["widget-wrapper"]}>
-						<Image src={contactMemoji} fill={true} />
+						<Image src={contactMemoji} fill={true} alt="Blaze's memoji character calling pose"/>
 					</div>
 				</Widget>
 			</DashboardRow>
@@ -43,8 +43,8 @@ const Contact = () => {
 					<motion.div className={styles["widget-wrapper"]}>
 						<motion.p className={styles["details"]}>
 							Whether you have a potential project in mind, or just want to talk
-							about web development, don't hesitate to reach out. I'm always
-							open to new opportunities and connections in this exciting field."
+							about web development, don&apos;t hesitate to reach out. I&apos;m always
+							open to new opportunities and connections in this exciting field.&quot;
 						</motion.p>
 					</motion.div>
 				</Widget>

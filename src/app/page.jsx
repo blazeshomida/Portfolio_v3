@@ -27,7 +27,7 @@ export default function Home() {
 							transition={{ duration: 0.5, delay: 0.2 }}
 							className={styles["main-heading"]}
 						>
-							Hello World!<span>I'm Blaze!</span>
+							Hello World!<span>I&apos;m Blaze!</span>
 						</motion.h1>
 					</motion.div>
 				</Widget>

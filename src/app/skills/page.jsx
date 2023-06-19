@@ -123,6 +123,7 @@ const Skills = () => {
 						<div className={styles["pagination-wrapper"]}>
 							{firstWidgetSlides.map((slide, index) => (
 								<button
+									key={index}
 									onClick={() => setFirstWidgetSlideIndex(index)}
 									className={`${
 										firstWidgetSlideIndex === index && styles["active"]
@@ -134,16 +135,17 @@ const Skills = () => {
 				</Widget>
 				<Widget layoutId="widget4">
 					<motion.div className={styles["widget-wrapper"]}>
-						<motion.p 
-						initial={{ opacity: 0, y: "30%", scale: 1 }}
-						animate={{ opacity: 1, y: "0%", scale: 1 }}
-						transition={{ duration: 0.5, delay: 0.2 }}
-						className={styles["details"]}>
+						<motion.p
+							initial={{ opacity: 0, y: "30%", scale: 1 }}
+							animate={{ opacity: 1, y: "0%", scale: 1 }}
+							transition={{ duration: 0.5, delay: 0.2 }}
+							className={styles["details"]}
+						>
 							HTML, CSS, JavaScript, React, Next.js, and more. This journey
 							began with a spark of curiosity about the inner workings of
-							websites and has since grown into a full-fledged passion. I've
-							dedicated myself to mastering these technologies and using them to
-							create interactive, user-friendly websites."
+							websites and has since grown into a full-fledged passion.
+							I&apos;ve dedicated myself to mastering these technologies and
+							using them to create interactive, user-friendly websites.&quot;
 						</motion.p>
 					</motion.div>
 				</Widget>
