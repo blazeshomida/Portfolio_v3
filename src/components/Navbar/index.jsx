@@ -70,7 +70,8 @@ const Navbar = () => {
 							></motion.div>
 						)}
 						<Link href={link.path} className={` ${styles["nav-link"]}`}>
-							<link.icon className={styles["nav-icon"]} /> {link.label}
+							<link.icon aria-hidden="true"	 className={styles["nav-icon"]} />{" "}
+							{link.label}
 						</Link>
 					</li>
 				))}
