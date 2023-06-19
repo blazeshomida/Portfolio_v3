@@ -33,8 +33,8 @@
 			"image": "/assets/images/screenshots/Bookmark.png",
 			"imageMobile": "/assets/images/screenshots/Bookmark-Mobile.png",
 			"tech": ["HTML", "CSS", "Javascript"],
-			"liveSite": "https://blazeshomida.github.io/Bookmark-Landing-Page---Frontend-Mentor/",
-			"repoSite": "https://github.com/blazeshomida/Bookmark-Landing-Page---Frontend-Mentor"
+			"liveSite": "https://blazeshomida.github.io/Bookmark-Landing-Page-FEM/",
+			"repoSite": "https://github.com/blazeshomida/Bookmark-Landing-Page-FEM"
 		}
 	]
 }
