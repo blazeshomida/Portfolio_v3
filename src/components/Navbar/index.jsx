@@ -53,12 +53,18 @@ const Navbar = () => {
 
 	return (
 		<nav className={styles["navbar"]}>
+
+			<Link
+			href='/'
+			>
 			<Image 
 			src={logo}
 			width={40}
 			height={40}
 			alt="Blaze's Logo"
 			/>
+			</Link>
+			
 
 
 			<ul className={`${styles["nav-list"]}`} role="list">
