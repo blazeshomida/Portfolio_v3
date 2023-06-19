@@ -86,6 +86,7 @@ const Projects = () => {
 
 	const buttonWidget = (
 		<div className={styles["button-wrapper"]}>
+			<p>{project.title}</p>
 			<Button elementType={"link"} href={project.liveSite}>
 				View Live
 			</Button>
@@ -96,18 +97,28 @@ const Projects = () => {
 	);
 
 	const detailsWidget = (
-		<motion.p
-			initial={{ opacity: 0, x: "-30%", scale: 1 }}
-			animate={{ opacity: 1, x: "0%", scale: 1 }}
-			transition={{ duration: 0.5, delay: 0.2 }}
-			className={styles["details"]}
-		>
-			A variety of projects that have allowed me to apply and expand my skills.
-			From multi-page websites to single component projects, each one presented
-			unique challenges and learning opportunities. These projects represent not
-			just my technical abilities, but also my problem-solving skills and my
-			commitment to continuous learning.
-		</motion.p>
+		<div>
+			<motion.p
+				initial={{ opacity: 0, x: "-30%", scale: 1 }}
+				animate={{ opacity: 1, x: "0%", scale: 1 }}
+				transition={{ duration: 0.5, delay: 0.2 }}
+				className={styles["details"]}
+			>
+				A variety of projects that have allowed me to apply and expand my
+				skills. From multi-page websites to single component projects, each one
+				presented unique challenges and learning opportunities. These projects
+				represent not just my technical abilities, but also my problem-solving
+				skills and my commitment to continuous learning.
+			</motion.p>
+			<motion.p
+				initial={{ opacity: 0, x: "-30%", scale: 1 }}
+				animate={{ opacity: 1, x: "0%", scale: 1 }}
+				transition={{ duration: 0.5, delay: 0.2 }}
+				className={styles["details-instructions"]}
+			>
+				Click on the project to view more info.
+			</motion.p>
+		</div>
 	);
 
 	return (
@@ -174,7 +185,6 @@ const Projects = () => {
 								</motion.div>
 
 								<button
-
 									onClick={(event) => handleCardFlip(event)}
 									className={styles["more-info-button"]}
 								>
