@@ -13,14 +13,20 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 
 const About = () => {
 	const page = usePathname();
-	const isDesktop = useMediaQuery('(width >= 1024px)')
+	const isDesktop = useMediaQuery("(width >= 1024px)");
 
 	return (
-		<Dashboard>
+		<>
 			<DashboardRow order={"top"} page={page.slice(1)}>
-				<Widget layoutId="widget1" aspect={!isDesktop ? 'two' : 'square'}>
+				<Widget layoutId="widget1" aspect={!isDesktop ? "two" : "square"}>
 					<div className={styles["widget-wrapper"]}>
-						<Image src={aboutMemoji} fill={true} alt="Blaze's memoji character"/>
+						<Image
+							priority
+							src={aboutMemoji}
+							fill={true}
+							sizes="(width < 1024px) 100vw, 33vw"
+							alt="Blaze's memoji character"
+						/>
 					</div>
 				</Widget>
 				<Widget layoutId="widget2">
@@ -35,11 +41,12 @@ const About = () => {
 				<Widget layoutId="widget3">
 					<motion.div className={styles["widget-wrapper"]}>
 						<motion.p className={styles["details"]}>
-						&quot;Beyond the code, there&apos;s a bit more to my story. I started my
-							professional journey with a successful career in sales, honing my
-							communication and problem-solving skills. This experience has
-							proved invaluable in my transition to web development, a shift
-							inspired by a blend of personal interests and innate curiosity.
+							&quot;Beyond the code, there&apos;s a bit more to my story. I
+							started my professional journey with a successful career in sales,
+							honing my communication and problem-solving skills. This
+							experience has proved invaluable in my transition to web
+							development, a shift inspired by a blend of personal interests and
+							innate curiosity.
 						</motion.p>
 						<motion.p className={styles["details"]}>
 							My journey into development started when I created a website for
@@ -49,8 +56,7 @@ const About = () => {
 							Another significant influence has been my love for movies and
 							smart home tech. In particular, designing a customized home
 							dashboard with Home Assistant, adding my personal touch to
-							pre-built components, really fueled my drive to delve into
-							coding.
+							pre-built components, really fueled my drive to delve into coding.
 						</motion.p>
 						<motion.p className={styles["details"]}>
 							As I continue my journey in web development, I am amazed by its
@@ -62,9 +68,8 @@ const About = () => {
 						</motion.p>
 					</motion.div>
 				</Widget>
-		
 			</DashboardRow>
-		</Dashboard>
+		</>
 	);
 };
 

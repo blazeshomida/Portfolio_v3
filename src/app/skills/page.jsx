@@ -76,11 +76,12 @@ const Skills = () => {
 	}
 
 	return (
-		<Dashboard>
+		<>
 			<DashboardRow order={"top"} page={page.slice(1)}>
 				<Widget aspect={!isDesktop && "two"} layoutId="widget1">
 					<motion.div className={styles["widget-wrapper"]}>
 						<Image
+							priority
 							alt="Memoji character on computer"
 							sizes="(width < 1024px) 100vw, 33vw"
 							src={skillsMemoji}
@@ -180,7 +181,7 @@ const Skills = () => {
 					</motion.div>
 				</Widget>
 			</DashboardRow>
-		</Dashboard>
+		</>
 	);
 };
 

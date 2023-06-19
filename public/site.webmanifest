@@ -1,0 +1,5 @@
+{
+	"display_override": ["standalone", "fullscreen"],
+	"display": "minimal-ui",
+	"short_name": "Blaze's Portfolio"
+}

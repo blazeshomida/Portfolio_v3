@@ -17,12 +17,12 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 
 const Contact = () => {
 	const page = usePathname();
-	const isDesktop = useMediaQuery('(width >= 1024px)')
+	const isDesktop = useMediaQuery("(width >= 1024px)");
 
 	return (
-		<Dashboard>
+		<>
 			<DashboardRow order={"top"} page={page.slice(1)}>
-				<Widget layoutId="widget1" order={!isDesktop && 'order-2'}>
+				<Widget layoutId="widget1" order={!isDesktop && "order-2"}>
 					<motion.div className={styles["widget-wrapper"]}>
 						<motion.h2 className={styles["main-heading"]}>
 							Would love to chat! Feel free to shoot me a message!
@@ -32,9 +32,14 @@ const Contact = () => {
 						</motion.h2>
 					</motion.div>
 				</Widget>
-				<Widget layoutId="widget2" aspect={!isDesktop && 'two'} >
+				<Widget layoutId="widget2" aspect={!isDesktop && "two"}>
 					<div className={styles["widget-wrapper"]}>
-						<Image src={contactMemoji} fill={true} alt="Blaze's memoji character calling pose"/>
+						<Image
+							src={contactMemoji}
+							fill={true}
+							sizes="(width < 1024px) 100vw, 33vw"
+							alt="Blaze's memoji character calling pose"
+						/>
 					</div>
 				</Widget>
 			</DashboardRow>
@@ -43,13 +48,14 @@ const Contact = () => {
 					<motion.div className={styles["widget-wrapper"]}>
 						<motion.p className={styles["details"]}>
 							Whether you have a potential project in mind, or just want to talk
-							about web development, don&apos;t hesitate to reach out. I&apos;m always
-							open to new opportunities and connections in this exciting field.&quot;
+							about web development, don&apos;t hesitate to reach out. I&apos;m
+							always open to new opportunities and connections in this exciting
+							field.&quot;
 						</motion.p>
 					</motion.div>
 				</Widget>
 				<Widget layoutId="widget4">
-					<div className={styles['widget-wrapper']}>
+					<div className={styles["widget-wrapper"]}>
 						<Form>
 							<InputGroup label="First Name" placeholder="Tim" type="text" />
 							<InputGroup label="Last Name" placeholder="Cook" type="text" />
@@ -69,9 +75,8 @@ const Contact = () => {
 						</Form>
 					</div>
 				</Widget>
-
 			</DashboardRow>
-		</Dashboard>
+		</>
 	);
 };
 

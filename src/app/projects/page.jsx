@@ -111,7 +111,7 @@ const Projects = () => {
 	);
 
 	return (
-		<Dashboard>
+		<>
 			<DashboardRow order={"top"} page={page.slice(1)}>
 				<Widget layoutId="widget1">
 					<motion.div className={styles["widget-wrapper"]}>
@@ -164,6 +164,7 @@ const Projects = () => {
 									className={styles["card-image-wrapper"]}
 								>
 									<Image
+										priority
 										alt={project.title}
 										className={styles["project-image"]}
 										src={project.image}
@@ -212,7 +213,8 @@ const Projects = () => {
 									<div className={styles["logo-wrapper"]}>
 										{project.tech.map((tech) =>
 											techLogos.map(
-												(logo, index) => logo.name === tech && <logo.component key={index}/>
+												(logo, index) =>
+													logo.name === tech && <logo.component key={index} />
 											)
 										)}
 									</div>
@@ -232,7 +234,7 @@ const Projects = () => {
 					</motion.div>
 				</AnimatePresence>
 			</DashboardRow>
-		</Dashboard>
+		</>
 	);
 };
 
