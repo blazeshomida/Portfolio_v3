@@ -1,11 +1,11 @@
 "use client";
 
 import { useContext } from "react";
-import styles from "./index.module.scss";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import styles from "./index.module.scss";
 import {
 	AboutIcon,
 	ContactIcon,
@@ -16,7 +16,7 @@ import {
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SunOuter, SunInner } from "../../../public/assets/svgs";
 import { ThemeContext } from "@/context/theme-provider";
-import logo from '/public/assets/logo.png'
+import logo from "/public/assets/logo.png";
 
 const Navbar = () => {
 	const pathname = usePathname();
@@ -53,19 +53,9 @@ const Navbar = () => {
 
 	return (
 		<nav className={styles["navbar"]}>
-
-			<Link
-			href='/'
-			>
-			<Image 
-			src={logo}
-			width={40}
-			height={40}
-			alt="Blaze's Logo"
-			/>
+			<Link href="/">
+				<Image src={logo} width={40} height={40} alt="Blaze's Logo" />
 			</Link>
-			
-
 
 			<ul className={`${styles["nav-list"]}`} role="list">
 				{navLinks.map((link) => (

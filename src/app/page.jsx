@@ -1,15 +1,14 @@
 "use client";
 
-import { useContext, useState } from "react";
 import Image from "next/image";
-import styles from "./page.module.scss";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import styles from "./page.module.scss";
 import Dashboard from "@/components/Dashboard";
 import DashboardRow from "@/components/Dashboard/DashboardRow";
-import { usePathname } from "next/navigation";
 import Widget from "@/components/Widget";
-import { heroMemoji } from "../../public/assets/images/memojis";
 import Button from "@/components/Button";
+import { heroMemoji } from "../../public/assets/images/memojis";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function Home() {
