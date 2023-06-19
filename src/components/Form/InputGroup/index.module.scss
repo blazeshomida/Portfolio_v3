@@ -1,0 +1,23 @@
+.input-group {
+	display: grid;
+}
+
+.input-label,
+.input-field {
+	display: block;
+}
+
+.input-label {
+	font-size: var(--fs-body-large);
+	justify-self: start;
+}
+
+.input-field {
+	padding: 0.5rem;
+	background-color: hsl(var(--clr-neutral-700));
+	border: none;
+	color: hsl(var(--clr-text));
+	font-family: inherit;
+	font-weight: 400;
+    border-radius: .5rem;
+}

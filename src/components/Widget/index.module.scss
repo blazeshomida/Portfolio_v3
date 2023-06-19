@@ -1,0 +1,30 @@
+.widget {
+	background: hsl(var(--clr-neutral-800));
+	width: 100%;
+	border-radius: 1rem;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 2px 2px 8px hsl(0, 0, 0, .1) ;
+}
+
+.square {
+	aspect-ratio: 1;
+}
+
+.three {
+	aspect-ratio: 3 / 1;
+}
+
+.two {
+	aspect-ratio: 2 /1;
+}
+
+.order-1 {
+	order: 1;
+}
+.order-2 {
+	order: 2;
+}
+.order-3 {
+	order: 3;
+}

@@ -1,0 +1,39 @@
+@use "@/styles/shared" as *;
+
+.widget-wrapper {
+	&.wrapper-cta {
+		align-content: space-between;
+
+		.cta-details {
+			display: grid;
+			gap: 1rem;
+
+			p:first-child {
+				font-weight: 800;
+				font-size: 1.5rem;
+				color: hsl(var(--clr-text));
+			}
+		}
+
+		.button-wrapper {
+			display: grid;
+			gap: 1rem;
+			width: 100%;
+		}
+	}
+
+	.main-heading {
+		font-size: var(--fs-h2);
+
+		span {
+			display: block;
+			font-size: var(--fs-h1);
+			line-height: 1;
+			color: hsl(var(--clr-primary));
+		}
+	}
+
+	img {
+		object-fit: contain;
+	}
+}

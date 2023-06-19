@@ -1,0 +1,40 @@
+{
+	"projects": [
+		{
+			"title": "Photosnap",
+			"summary": "The Photosnap Website project is a testament to my ability to create fully responsive and interactive websites. Utilizing my proficiency in React, SCSS, and JSON, I've crafted a site that not only looks good but also functions seamlessly across various device screen sizes. This project underscores my problem-solving skills, adaptability, and commitment to continuous learning in the dynamic field of web development.",
+			"image": "/assets/images/screenshots/Photosnap.png",
+			"imageMobile": "/assets/images/screenshots/Photosnap-mobile.png",
+			"tech": ["React", "NextJS", "Sass"],
+			"liveSite": "https://photosnap-multipage-website-fem.vercel.app/",
+			"repoSite": "https://github.com/blazeshomida/Photosnap-Multipage-Website-FEM"
+		},
+		{
+			"title": "Space-Tourism",
+			"summary": "The Space Tourism project is a multi-page website embodying space exploration through an intuitive interface and vibrant visuals. It involved learning React, CSS Modules, Framer Motion, and Tailwind CSS, with emphasis on high-quality responsive background images, efficient file structuring, and active page navigation. This project showcases my development growth and readiness to face new challenges.",
+			"image": "/assets/images/screenshots/Space-Tourism.png",
+			"imageMobile": "/assets/images/screenshots/Space-Tourism-mobile.png",
+			"tech": ["React", "NextJS", "Tailwind"],
+			"liveSite": "https://space-tourism-react-fem.vercel.app/",
+			"repoSite": "https://github.com/blazeshomida/Space-Tourism-React-FEM"
+		},
+		{
+			"title": "Multi-Step Form",
+			"summary": "In this project, I successfully developed a dynamic multi-step form, adept at collecting and validating user input, demonstrating my proficiency in managing state across various components and mastering intricate form logic. Leveraging the robust capabilities of React.js, Next.js, and SCSS, I crafted a user-centric solution, acquiring expertise in form validation, dynamic rendering, and data matching, with an unwavering commitment to refine and streamline my codebase for better readability and maintainability.",
+			"image": "/assets/images/screenshots/Multi-Step-Form.png",
+			"imageMobile": "/assets/images/screenshots/Multi-Step-Form-mobile.png",
+			"tech": ["React", "NextJS", "Sass"],
+			"liveSite": "https://multi-step-form-fem-iota.vercel.app/",
+			"repoSite": "https://github.com/blazeshomida/Multi-Step-Form-FEM"
+		},
+		{
+			"title": "Bookmark",
+			"summary": "This landmark project entailed developing a responsive Bookmark Landing Page. Through grappling with new elements like tabs and SVG color modification, I leveraged Semantic HTML5, CSS properties, Flexbox, and Grid to enhance dynamic shapes, SVG manipulations, and form validation. The challenges faced during this project have bolstered my problem-solving skills, encouraging me to further optimize accessibility, refine code, and delve into CSS animations and JavaScript frameworks.",
+			"image": "/assets/images/screenshots/Bookmark.png",
+			"imageMobile": "/assets/images/screenshots/Bookmark-mobile.png",
+			"tech": ["HTML", "CSS", "Javascript"],
+			"liveSite": "https://blazeshomida.github.io/Bookmark-Landing-Page---Frontend-Mentor/",
+			"repoSite": "https://github.com/blazeshomida/Bookmark-Landing-Page---Frontend-Mentor"
+		}
+	]
+}

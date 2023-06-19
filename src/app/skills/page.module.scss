@@ -1,0 +1,73 @@
+@use "@/styles/shared" as *;
+
+.widget-wrapper {
+
+	.main-heading {
+		font-size: var(--fs-h2);
+	}
+	img {
+		object-fit: contain;
+	}
+
+	.slides-wrapper {
+		display: grid;
+		gap: 1.5rem;
+		grid-auto-flow: column;
+		order: 2;
+
+		@media (min-width: 1024px) {
+			grid-auto-flow: row;
+		}
+	}
+
+	ul {
+		cursor: grab;
+
+		&:active {
+			cursor: grabbing;
+		}
+	}
+
+	.logo-wrapper {
+		display: grid;
+		place-items: center;
+		gap: 0.5rem;
+	}
+
+	svg {
+		max-height: 4rem;
+		max-width: 4rem;
+		width: 100%;
+		height: 100%;
+
+		color: inherit;
+	}
+}
+
+.pagination-wrapper {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	right: 1rem;
+	top: 50%;
+	place-content: center;
+
+	padding: 1rem 0.5rem;
+	transform: translateY(-50%);
+	background-color: hsl(var(--clr-neutral-900), 0.3);
+	border-radius: 100vw;
+	height: min-content;
+}
+
+.pagination-indicator {
+	border: none;
+	width: 0.625rem;
+	aspect-ratio: 1;
+	background-color: hsl(var(--clr-neutral-100), 0.2);
+	border-radius: 50%;
+
+	&.active {
+		background-color: hsl(var(--clr-neutral-100));
+	}
+}

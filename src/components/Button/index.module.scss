@@ -1,0 +1,13 @@
+ .button {
+    background-color: hsl(var(--clr-primary));
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: .5rem;
+    padding-block: 1rem;
+}
+
+.tinted {
+    color: hsl(var(--clr-primary));
+    background-color: hsl(var(--clr-primary), 0.15);
+}

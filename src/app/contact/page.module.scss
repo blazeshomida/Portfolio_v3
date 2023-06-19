@@ -1,0 +1,17 @@
+@use "@/styles/shared" as *;
+.widget-wrapper {
+	.main-heading {
+		font-size: var(--fs-h2);
+	}
+
+	img {
+		object-fit: contain;
+	}
+
+	svg {
+		display: inline;
+		position: relative;
+		transform: translateY(25%);
+		height: var(--fs-h2);
+	}
+}

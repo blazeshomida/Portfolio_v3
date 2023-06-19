@@ -1,0 +1,38 @@
+$colors: (
+	"primary": (
+		357,
+		92%,
+		47%,
+	),
+
+	"neutral-100": (
+		0,
+		0%,
+		100%,
+	),
+	"neutral-700": (
+		0,
+		0%,
+		12%,
+	),
+	"neutral-800": (
+		0,
+		0%,
+		8%,
+	),
+	"neutral-900": (
+		0,
+		0%,
+		0%,
+	),
+
+	"text": var(--clr-neutral-100),
+	"bg": var(--clr-neutral-900),
+);
+
+$typography: (
+	"fs-h1": clamp(3.5rem, 11.8vw, 9.375rem),
+	"fs-h2": clamp(2rem, 5.7vw, 4rem),
+	"fs-h3": clamp(1.5rem, 3.5vw, 2.5rem),
+	"fs-body-large": clamp(1rem, 2vw, 1.25rem),
+);

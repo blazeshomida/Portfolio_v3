@@ -1,0 +1,11 @@
+.widget-wrapper {
+	display: grid;
+	place-items: center;
+	padding: 2.5rem 2rem;
+	position: relative;
+	gap: 2rem;
+
+	height: 100%;
+
+	overflow: hidden;
+}
