@@ -12,6 +12,10 @@
 		z-index: 99999;
 		aspect-ratio: 1;
 		object-fit: contain;
+		
+		@media (width < 1024px) {
+			top: 1rem;
+		}
 	}
 }
 
