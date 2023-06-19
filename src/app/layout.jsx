@@ -14,7 +14,7 @@ export const metadata = {
 	},
 
 	appleWebApp: {
-		title: "Blaze",
+		title: "Blaze's Portfolio",
 		statusBarStyle: "black-translucent",
 	},
 	manifest: "/public/site.webmanifest",
