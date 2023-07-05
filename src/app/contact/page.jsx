@@ -78,8 +78,14 @@ const Contact = () => {
 
 	return (
 		<>
-			<DashboardRow order={"top"} page={page.slice(1)}>
-				<Widget layoutId="widget1" order={!isDesktop && "order-2"}>
+			<DashboardRow
+				order={"top"}
+				page={page.slice(1)}
+			>
+				<Widget
+					layoutId="widget1"
+					order={!isDesktop && "order-2"}
+				>
 					<motion.div className={styles["widget-wrapper"]}>
 						<motion.h1 className={styles["main-heading"]}>
 							Would love to chat! Feel free to shoot me a message!
@@ -89,7 +95,10 @@ const Contact = () => {
 						</motion.h1>
 					</motion.div>
 				</Widget>
-				<Widget layoutId="widget2" aspect={!isDesktop && "two"}>
+				<Widget
+					layoutId="widget2"
+					aspect={!isDesktop && "two"}
+				>
 					<div className={styles["widget-wrapper"]}>
 						<Image
 							src={contactMemoji}
@@ -100,7 +109,10 @@ const Contact = () => {
 					</div>
 				</Widget>
 			</DashboardRow>
-			<DashboardRow order={"bottom"} page={page.slice(1)}>
+			<DashboardRow
+				order={"bottom"}
+				page={page.slice(1)}
+			>
 				<Widget layoutId="widget3">
 					<motion.div className={styles["widget-wrapper"]}>
 						<motion.p className={styles["details"]}>
@@ -110,12 +122,15 @@ const Contact = () => {
 							field.&quot;
 						</motion.p>
 						<div className={styles["button-wrapper"]}>
-							<Button elementType={"link"} href='mailto:blaze.shomida@gmail.com'>
+							<Button
+								elementType={"link"}
+								href="mailto:blaze.shomida@gmail.com"
+							>
 								Email
 							</Button>
 							<Button
 								elementType={"link"}
-								href=''
+								href="https://www.linkedin.com/in/blazeshomida/"
 								variation={"tinted"}
 							>
 								LinkedIn
