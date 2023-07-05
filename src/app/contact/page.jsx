@@ -110,8 +110,8 @@ const Contact = () => {
 							field.&quot;
 						</motion.p>
 						<div className={styles["button-wrapper"]}>
-							<Button elementType={"link"} href=''>
-								Github
+							<Button elementType={"link"} href='mailto:blaze.shomida@gmail.com'>
+								Email
 							</Button>
 							<Button
 								elementType={"link"}
