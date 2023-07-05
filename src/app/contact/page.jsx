@@ -123,7 +123,7 @@ const Contact = () => {
 						</div>
 					</motion.div>
 				</Widget>
-				<Widget layoutId="widget4">
+				{/* <Widget layoutId="widget4">
 					<div className={styles["widget-wrapper"]}>
 						<Form handleSubmit={handleSubmit}>
 							<InputGroup
@@ -163,7 +163,7 @@ const Contact = () => {
 							</Button>
 						</Form>
 					</div>
-				</Widget>
+				</Widget> */}
 			</DashboardRow>
 		</>
 	);
