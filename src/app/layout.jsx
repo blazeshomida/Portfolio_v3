@@ -5,6 +5,7 @@ import ThemeProvider from "@/context/theme-provider";
 export const metadata = {
 	title: "Blaze",
 	description: "A portfolio of work for Front-End Developer Blaze Shomida",
+	manifest: "/manifest.json",
 	viewport: {
 		width: "device-width",
 		initialScale: 1,
@@ -12,15 +13,10 @@ export const metadata = {
 		userScalable: "no",
 		viewportFit: "cover",
 	},
-
-	appleWebApp: {
-		title: "Blaze's Portfolio",
-		statusBarStyle: "black-translucent",
-	},
-	manifest: "/public/site.webmanifest",
 };
 
 export default function RootLayout({ children }) {
+	
 	return (
 		<html lang="en">
 			<ThemeProvider>{children}</ThemeProvider>
